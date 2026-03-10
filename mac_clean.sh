@@ -29,6 +29,7 @@ main() {
     "  Scan Large Directories"
     "  Clean Common Caches"
     "  iOS / Xcode Development Clean"
+    "  Android Development Clean"
     "  View Last Report"
     "  Settings"
     "  Quit"
@@ -44,9 +45,10 @@ main() {
       1) run_scan_dirs_interactive "${SCAN_PATH:-$HOME}" ;;
       2) run_clean_caches_interactive ;;
       3) run_clean_ios_interactive ;;
-      4) view_last_report ;;
-      5) run_settings ;;
-      6|-1) exit 0 ;;
+      4) run_clean_android_interactive ;;
+      5) view_last_report ;;
+      6) run_settings ;;
+      7|-1) exit 0 ;;
     esac
   done
 }
